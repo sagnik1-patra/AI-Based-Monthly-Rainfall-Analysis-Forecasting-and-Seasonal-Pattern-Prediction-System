@@ -1,4 +1,3 @@
-
 # 🌧️ AI-Based Monthly Rainfall Analysis, Forecasting, and Seasonal Pattern Prediction System
 
 ## 📌 Project Overview
