@@ -1,0 +1,21 @@
+project: AI-Based Monthly Rainfall Forecasting
+dataset: C:\Users\sagni\Downloads\AI-Based Monthly Rainfall Analysis, Forecasting,
+  and Seasonal Pattern Prediction System\D67. Rainfall Monthly Total_1_0.csv
+target: Total_rainfall
+date_column: Month-Year
+random_seed: 42
+test_size: 0.2
+forecast_months: 12
+lags:
+- 1
+- 2
+- 3
+- 6
+- 12
+rolling_windows:
+- 3
+- 6
+neural_network:
+  epochs: 200
+  batch_size: 8
+  learning_rate: 0.001

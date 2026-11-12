@@ -1,0 +1,13 @@
+Month-Year,Predicted_Rainfall,Model_Used
+2022-01,24.509,Random Forest
+2022-02,22.202,Random Forest
+2022-03,25.809,Random Forest
+2022-04,102.52,Random Forest
+2022-05,64.172,Random Forest
+2022-06,54.213,Random Forest
+2022-07,60.452,Random Forest
+2022-08,94.798,Random Forest
+2022-09,157.504,Random Forest
+2022-10,167.186,Random Forest
+2022-11,173.818,Random Forest
+2022-12,160.044,Random Forest

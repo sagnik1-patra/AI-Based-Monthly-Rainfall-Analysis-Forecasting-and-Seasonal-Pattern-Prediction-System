@@ -1,0 +1,29 @@
+project: PSO-Based Monthly Rainfall Forecasting
+algorithm: Particle Swarm Optimization
+dataset: C:\Users\sagni\Downloads\AI-Based Monthly Rainfall Analysis, Forecasting,
+  and Seasonal Pattern Prediction System\D67. Rainfall Monthly Total_1_0.csv
+seed: 42
+forecast_months: 12
+lags:
+- 1
+- 2
+- 3
+- 6
+- 12
+rolling_windows:
+- 3
+- 6
+train_ratio: 0.6
+validation_ratio: 0.2
+test_ratio: 0.2
+pso_random_forest:
+  particles: 10
+  iterations: 12
+  inertia: 0.7
+  cognitive: 1.5
+  social: 1.5
+pso_neural_network:
+  particles: 5
+  iterations: 5
+  search_epochs: 50
+  final_epochs: 80

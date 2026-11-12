@@ -1,0 +1,13 @@
+Month-Year,Predicted_Rainfall,Model_Used
+2022-01,7.845,AIS Random Forest
+2022-02,10.296,AIS Random Forest
+2022-03,10.358,AIS Random Forest
+2022-04,102.285,AIS Random Forest
+2022-05,55.215,AIS Random Forest
+2022-06,40.375,AIS Random Forest
+2022-07,64.47,AIS Random Forest
+2022-08,75.538,AIS Random Forest
+2022-09,122.211,AIS Random Forest
+2022-10,133.352,AIS Random Forest
+2022-11,126.243,AIS Random Forest
+2022-12,115.574,AIS Random Forest

@@ -1,0 +1,35 @@
+{
+    "project": "AI-Based Monthly Rainfall Analysis, Forecasting, and Seasonal Pattern Prediction",
+    "best_model_by_test_rmse": "Random Forest",
+    "evaluation": "chronological holdout",
+    "training_samples": 96,
+    "testing_samples": 24,
+    "forecast_months": 12,
+    "metrics": {
+        "Random Forest": {
+            "MAE": 39.5141860528742,
+            "RMSE": 56.944975909672955,
+            "R2": 0.338994055113345
+        },
+        "Gradient Boosting": {
+            "MAE": 52.506529868316846,
+            "RMSE": 64.13314459394395,
+            "R2": 0.1615839026201904
+        },
+        "Neural Network": {
+            "MAE": 42.980396417776745,
+            "RMSE": 66.01944996794384,
+            "R2": 0.11153905509240647
+        }
+    },
+    "outputs": [
+        "accuracy_graph.png",
+        "comparison_graph.png",
+        "heatmap.png",
+        "result.csv",
+        "result_graph.png",
+        "prediction.csv",
+        "prediction_graph.png",
+        "model_comparison.csv"
+    ]
+}

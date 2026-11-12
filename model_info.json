@@ -1,0 +1,61 @@
+{
+    "project_name": "AI-Based Monthly Rainfall Forecasting",
+    "created_at": "2026-11-12T10:31:24.911523",
+    "dataset": "D67. Rainfall Monthly Total_1_0.csv",
+    "total_records": 132,
+    "training_samples": 96,
+    "testing_samples": 24,
+    "feature_columns": [
+        "month",
+        "month_sin",
+        "month_cos",
+        "time_index",
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "lag_6",
+        "lag_12",
+        "rolling_mean_3",
+        "rolling_mean_6",
+        "rolling_std_3",
+        "rolling_std_6"
+    ],
+    "target_column": "Total_rainfall",
+    "forecast_horizon_months": 12,
+    "best_model": "Random Forest",
+    "best_classical_model": "Random Forest",
+    "selection_metric": "RMSE",
+    "metrics": {
+        "Random Forest": {
+            "MAE": 39.51418605287421,
+            "RMSE": 56.944975909672955,
+            "R2": 0.3389940551133449
+        },
+        "Gradient Boosting": {
+            "MAE": 52.506529868316846,
+            "RMSE": 64.13314459394395,
+            "R2": 0.1615839026201904
+        },
+        "Neural Network": {
+            "MAE": 42.980396417776745,
+            "RMSE": 66.01944996794384,
+            "R2": 0.11153905509240647
+        }
+    },
+    "saved_files": {
+        "h5": "rainfall_model.h5",
+        "pkl": "rainfall_model.pkl",
+        "yaml": "config.yaml",
+        "json": "model_info.json",
+        "test_results": "result.csv",
+        "future_predictions": "prediction.csv"
+    },
+    "notes": [
+        "Chronological train-test split used.",
+        "Lag features use past rainfall only.",
+        "H5 stores the neural network.",
+        "PKL stores the best classical model.",
+        "Future predictions are recursive estimates.",
+        "Reported metrics are held-out test metrics."
+    ]
+}
