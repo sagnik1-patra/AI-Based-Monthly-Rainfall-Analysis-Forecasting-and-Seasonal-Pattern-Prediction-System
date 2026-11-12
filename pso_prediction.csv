@@ -1,0 +1,13 @@
+Month-Year,Predicted_Rainfall,Model_Used
+2022-01,21.723,PSO Neural Network
+2022-02,11.404,PSO Neural Network
+2022-03,18.081,PSO Neural Network
+2022-04,89.277,PSO Neural Network
+2022-05,48.218,PSO Neural Network
+2022-06,53.104,PSO Neural Network
+2022-07,74.419,PSO Neural Network
+2022-08,103.917,PSO Neural Network
+2022-09,138.873,PSO Neural Network
+2022-10,174.318,PSO Neural Network
+2022-11,125.182,PSO Neural Network
+2022-12,101.175,PSO Neural Network

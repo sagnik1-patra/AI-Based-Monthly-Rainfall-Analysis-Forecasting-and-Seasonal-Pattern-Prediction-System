@@ -1,0 +1,73 @@
+{
+    "project": "PSO-Based Monthly Rainfall Forecasting",
+    "algorithm": "Particle Swarm Optimization",
+    "created_at": "2026-11-12T10:49:19.061939",
+    "dataset": "D67. Rainfall Monthly Total_1_0.csv",
+    "total_records": 132,
+    "training_samples": 72,
+    "validation_samples": 24,
+    "testing_samples": 24,
+    "feature_columns": [
+        "month",
+        "month_sin",
+        "month_cos",
+        "time_index",
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "lag_6",
+        "lag_12",
+        "rolling_mean_3",
+        "rolling_mean_6",
+        "rolling_std_3",
+        "rolling_std_6"
+    ],
+    "best_rf_parameters": {
+        "n_estimators": 54,
+        "max_depth": 9,
+        "min_samples_split": 5,
+        "min_samples_leaf": 6
+    },
+    "best_nn_units": 90,
+    "best_nn_learning_rate": 0.0006765032398884869,
+    "best_rf_validation_rmse": 40.82546109072429,
+    "best_nn_validation_rmse": 38.83724903394245,
+    "baseline_validation_rmse": 44.19871830115612,
+    "selected_best_model": "PSO Neural Network",
+    "selection_method": "Minimum validation RMSE",
+    "model_metrics": {
+        "Baseline Random Forest": {
+            "MAE": 39.69033691969263,
+            "RMSE": 57.827210668029466,
+            "R2": 0.3183537858732468
+        },
+        "PSO Random Forest": {
+            "MAE": 38.53046206055077,
+            "RMSE": 55.717622318523,
+            "R2": 0.3671807398943451
+        },
+        "PSO Neural Network": {
+            "MAE": 40.3083191037178,
+            "RMSE": 62.966917279312504,
+            "R2": 0.19179896597682133
+        }
+    },
+    "forecast_months": 12,
+    "saved_files": [
+        "pso_rainfall_model.pkl",
+        "pso_rainfall_model.h5",
+        "pso_config.yaml",
+        "pso_model_info.json",
+        "pso_accuracy_graph.png",
+        "pso_comparison_graph.png",
+        "pso_heatmap.png",
+        "pso_result.csv",
+        "pso_result_graph.png",
+        "pso_prediction.csv",
+        "pso_prediction_graph.png",
+        "pso_fitness_graph.png",
+        "pso_model_comparison.csv",
+        "pso_feature_importance.csv",
+        "pso_feature_importance.png"
+    ]
+}
